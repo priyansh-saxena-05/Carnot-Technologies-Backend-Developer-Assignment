@@ -36,7 +36,7 @@ def load_data_to_redis(csv_file):
             else:
                 custom_redis.set(device_id, row)
 
-load_data_to_redis('/Users/priyanshsaxena/Downloads/raw_data (4) (6).csv')
+load_data_to_redis('data.csv')
 
 @app.route('/latest_info/<device_id>', methods=['GET'])
 def get_latest_info(device_id):
